@@ -1,0 +1,198 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background: linear-gradient(121.28deg,#010012 0%, #00ff94 100%),linear-gradient(238.72deg, #00227a 0%,#ffffff 100%),linear-gradient(244.35deg, #ffb26a 0%, #c15151 50.58%, #00a3ff 100%),linear-gradient(326.45deg, #e46262 0.54%, #000000 38.51%, #ff0000 75.69%),radial-gradient(100% 216.55% at 0% 0%, #2400ff 0%, #ff0000 44.27%, #610051 100%),linear-gradient(307.27deg, #096f5c 0.37%, #687eb5 52.78%, #6944ff 100%),radial-gradient(56.34% 100% at 36.02% 0%, #ff00c7 0%, #006c7a 38.54%,#ff9900 100%);
+    background-blend-mode: overlay,difference,color-dodge,overlay,difference,color-dodge,normal;
+}
+.middle-table{
+ margin:  103px 170px;
+ background-color: #fff;
+ border-radius: 20px;
+box-shadow: 1px 2px 2px 6px rgba(236, 234, 234, 0.18);
+}
+header{
+    display: flex;
+    justify-content: space-between;
+    padding: 30px 150px;
+}
+.fa-bars-icon{
+    visibility: hidden;
+}
+.icon-fa{
+    visibility: hidden;
+}
+.nav-icon{
+    display: none;
+}
+.namefull{
+    font-size: 20px;
+    font-family: arial;
+    font-weight: 700;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 3s steps(20) infinite;
+}
+@keyframes typing {
+    0%{width: 0;}
+    100%{width: 50%;}
+}
+.list-ul{
+    display: flex;
+    justify-content: center;
+}
+.list-li{
+    list-style-type: none;
+    margin: 0 10px;
+}
+.list-a{
+    text-decoration: none;
+    color: #000000;
+}
+.list-a:hover{
+    border-bottom: 2px solid #000000;
+}
+.select{
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+}
+.img{
+    padding: 0 50px;
+}
+.img-1{
+    border-radius: 100%;
+    height: 250px;
+    width: 100%;
+  box-shadow: rgba(236, 234, 234, 0.18) 0px 4px 0px 9px;
+  border: 3px dotted #00227a;
+  margin: 0 50px;
+}
+.right-side{
+    padding: 60px 0;
+    text-align: center;
+}
+.right-side h1{
+   font-family: sans-serif;
+   font-weight: 700;
+   margin: 10px 0;
+   overflow: hidden;
+    white-space: nowrap;
+    /* border-right: 2px solid #0077cc; */
+    animation: name 3s steps(20) infinite;
+}
+@keyframes name{
+    0%{opacity: 0;}
+    100%{opacity: 1;}
+}
+.right-side p{
+    font-size: 15px;
+    font-family: sans-serif;
+    font-weight: 700;
+    margin: 10px 0;
+    width: 90%;
+    text-align: center;
+}
+.click-on{
+  text-align: center;
+}
+.contact{
+    border-radius: 15px;
+    width: 50%;
+    height: 30px;
+    font-size: 12px;
+    font-weight: 800;
+    background-color: #000000;
+    color: #fff;
+    border: none;
+}
+.contact:hover{
+    background-color: #ffff;
+    color: #000000;
+    border: 2px solid #000000;
+}
+.connected{
+    margin: 10px;
+}
+.fa-brands{
+    padding: 0 10px;
+}
+.fa-brands:hover{
+    color: #00227a;
+}
+
+@media (max-width:500px) {
+    header{
+        display: flex;
+        justify-content: space-between;
+        padding: 20px 20px 0;
+        height: 70px;
+    }
+    nav{
+        display: none;
+    }
+    .nav-icon{
+       display: block;
+      padding-left: 50px;
+      width: 20%;
+    }
+    .fa-bars-icon{
+        visibility: visible;
+    }
+    .fa-circle-xmark{
+        color: #ffff;
+        margin: 5px 0;
+    }
+    .icon-fa{
+        visibility: hidden;
+        background-color: #e32f83;
+        width: 100%;
+        height: 130px;
+        position: absolute;
+        left: 0;
+        top: 0;
+        right: 0;
+      text-align: center;
+    }
+    .list-ul-1{
+        text-align: center;
+        margin: 10px 0;
+    }
+    .list-a-1{
+        color: #ffff;
+        text-decoration: none;
+    }
+    .list-a-1:hover{
+        border-bottom: 2px solid #ffff;
+    }
+    .list-li-1{
+        list-style-type: none;
+        margin: 5px 0;
+    }
+
+    .middle-table{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        border-radius: inherit;
+    }
+    .select{
+        display: block;
+        padding: 30px;
+    }
+    .img{
+        padding: 0 60px;
+    }
+    .img-1{
+        height: 270px;
+        margin: 0;
+    }
+    .right-side{
+        padding: 30px 0;
+    }
+    .connected{
+        margin: 10px 0 ;
+    }
+}
